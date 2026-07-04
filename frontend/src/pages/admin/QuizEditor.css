@@ -1,0 +1,112 @@
+.btn-back-link {
+  background: none;
+  border: none;
+  color: #64748b;
+  font-size: 0.9rem;
+  cursor: pointer;
+  padding: 0;
+  margin-bottom: 0.25rem;
+  display: block;
+}
+.btn-back-link:hover { color: #4f46e5; }
+
+.questions-list { display: flex; flex-direction: column; gap: 1rem; }
+
+.empty-questions {
+  background: white;
+  border-radius: 12px;
+  padding: 3rem;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.empty-questions p { color: #64748b; margin-bottom: 1rem; }
+
+.question-editor-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.qe-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.qe-number {
+  background: #4f46e5;
+  color: white;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.qe-actions { margin-left: auto; display: flex; gap: 0.4rem; }
+
+.qe-text { font-size: 1rem; color: #1e293b; margin-bottom: 0.75rem; }
+
+.qe-options { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+
+.qe-option {
+  padding: 0.3rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.82rem;
+  background: #f1f5f9;
+  color: #475569;
+}
+.qe-option.correct { background: #d1fae5; color: #065f46; font-weight: 600; }
+
+/* Option editor */
+.option-editor-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.option-editor-row input[type="text"] {
+  flex: 1;
+  padding: 0.5rem 0.75rem;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  outline: none;
+}
+.option-editor-row input[type="text"]:focus { border-color: #4f46e5; }
+
+.btn-remove-opt {
+  background: #fee2e2;
+  color: #ef4444;
+  border: none;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  font-size: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.btn-remove-opt:disabled { opacity: 0.3; }
+
+.btn-add-opt {
+  background: #f5f3ff;
+  color: #4f46e5;
+  border: 1.5px dashed #a5b4fc;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  width: 100%;
+  margin-top: 0.25rem;
+}
+.btn-add-opt:hover { background: #ede9fe; }

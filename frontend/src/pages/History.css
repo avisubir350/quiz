@@ -1,0 +1,81 @@
+.history-page { max-width: 800px; margin: 0 auto; padding: 2rem; }
+
+.history-header { margin-bottom: 2rem; }
+.history-header h1 { font-size: 2rem; color: #1e293b; }
+.history-header p { color: #64748b; }
+
+.empty-state {
+  text-align: center;
+  padding: 4rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.empty-state p { color: #64748b; margin-bottom: 1.5rem; }
+.btn-primary-sm {
+  background: #4f46e5;
+  color: white;
+  padding: 0.7rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.history-list { display: flex; flex-direction: column; gap: 1rem; }
+
+.history-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  transition: box-shadow 0.2s;
+  color: inherit;
+}
+.history-card:hover { box-shadow: 0 4px 16px rgba(79,70,229,0.1); }
+
+.history-card-left { flex: 1; }
+.history-card-left h3 { font-size: 1.05rem; color: #1e293b; margin-bottom: 0.4rem; }
+
+.history-meta { display: flex; gap: 0.5rem; margin-bottom: 0.4rem; }
+.tag-sm {
+  background: #ede9fe;
+  color: #6d28d9;
+  padding: 0.2rem 0.5rem;
+  border-radius: 12px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.tag-sm.difficulty { background: #fef9c3; color: #92400e; }
+
+.history-date { font-size: 0.82rem; color: #94a3b8; }
+
+.history-card-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.score-badge {
+  font-size: 1.4rem;
+  font-weight: 700;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+}
+.score-badge.pass { background: #d1fae5; color: #065f46; }
+.score-badge.fail { background: #fee2e2; color: #991b1b; }
+
+.status-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.status-label.pass { color: #10b981; }
+.status-label.fail { color: #ef4444; }
+.status-label.ongoing { color: #f59e0b; }
